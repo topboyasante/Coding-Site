@@ -113,6 +113,7 @@ header .text p {
 }
 .gallery .row .text {
   margin: 0em auto;
+  padding-bottom: 1.5em;
 }
 
 @media (max-width: 700px) {
