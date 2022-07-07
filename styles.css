@@ -15,7 +15,6 @@ header {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  position: relative;
   background-image: url(/Images/arnold-francisca-FBNxmwEVpAc-unsplash.jpg);
   transition: 1s ease;
 }
@@ -96,6 +95,26 @@ header .text p {
   font-size: 1.5em;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.gallery .row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.gallery .row .img {
+  width: 50%;
+}
+.gallery .row .img img {
+  width: 100%;
+}
+.gallery .row .text {
+  margin: 0em auto;
+}
+
 @media (max-width: 700px) {
   header nav #navbar-toggle {
     display: flex;
@@ -142,6 +161,10 @@ header .text p {
 .dark header .text {
   color: white;
 }
+.dark .gallery {
+  background-color: rgb(41, 40, 40);
+  color: white;
+}
 .dark .btn {
   border: 1px solid white;
   color: white;
@@ -152,4 +175,13 @@ header .text p {
   border: 2px solid rgb(224, 221, 221);
   color: rgb(224, 221, 221);
   padding: 0.5em;
+}
+
+.black {
+  border-color: black;
+  color: black;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=styles.css.map */
