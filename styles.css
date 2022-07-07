@@ -30,7 +30,7 @@ header nav #navbar-toggle, header nav #nav-close {
 }
 header nav .logo {
   transition: 1s ease;
-  color: gray;
+  color: rgb(224, 221, 221);
 }
 header nav .navbar-links ul {
   display: flex;
@@ -87,7 +87,7 @@ header .text {
   width: 100vw;
   transition: 1s ease;
   text-align: center;
-  color: gray;
+  color: rgb(224, 221, 221);
 }
 header .text h1 {
   font-size: 5em;
@@ -99,7 +99,7 @@ header .text p {
 @media (max-width: 700px) {
   header nav #navbar-toggle {
     display: flex;
-    color: gray;
+    color: rgb(224, 221, 221);
   }
   header nav .navbar-links {
     display: none;
@@ -149,7 +149,7 @@ header .text p {
 }
 
 .btn {
-  border: 2px solid rgb(159, 157, 157);
-  color: gray;
+  border: 2px solid rgb(224, 221, 221);
+  color: rgb(224, 221, 221);
   padding: 0.5em;
 }/*# sourceMappingURL=styles.css.map */
