@@ -133,7 +133,7 @@ header .text p {
 .dark header {
   background-image: url(/Images/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
 }
-.dark header nav {
+.dark header nav .logo, .dark header nav #navbar-toggle {
   color: white;
 }
 .dark header nav .navbar-links ul li a {

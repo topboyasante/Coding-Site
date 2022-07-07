@@ -154,7 +154,9 @@ header{
     header{
         background-image: url(/Images/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
         nav{
-            color: white;
+            .logo, #navbar-toggle{
+                color: white;
+            }
             .navbar-links ul li a{
                 color: white;
             }
