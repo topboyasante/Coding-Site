@@ -33,8 +33,16 @@ header nav #navbar-toggle, header nav #nav-close {
   display: none;
 }
 header nav .logo {
+  font-size: 2em;
   transition: 1s ease;
   color: rgb(224, 221, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+header nav .logo p {
+  font-size: 0.3em;
 }
 header nav .navbar-links ul {
   display: flex;
@@ -94,7 +102,7 @@ header .text {
   color: rgb(224, 221, 221);
 }
 header .text h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 header .text p {
   font-size: 1.5em;
@@ -119,6 +127,7 @@ header .text p {
 .gallery .row .text {
   margin: 0em auto;
   padding-bottom: 1.5em;
+  width: 50%;
 }
 
 .remarks {
