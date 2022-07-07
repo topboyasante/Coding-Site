@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+p {
+  font-weight: 100;
+}
+
 header {
   width: 100vw;
   height: 100vh;
