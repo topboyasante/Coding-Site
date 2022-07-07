@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url(/Images/arnold-francisca-FBNxmwEVpAc-unsplash.jpg);
+  transition: 1s ease;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em 0;
+}
+header nav #navbar-toggle, header nav #nav-close {
+  display: none;
+}
+header nav .logo {
+  transition: 1s ease;
+  color: gray;
+}
+header nav .navbar-links ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+header nav .navbar-links ul li a {
+  color: gray;
+}
+header nav .darkMode-toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+header nav .darkMode-toggle .checkbox:checked + label .ball {
+  transform: translateX(24px);
+}
+header nav .darkMode-toggle label {
+  width: 50px;
+  height: 26px;
+  background-color: rgb(62, 62, 62);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+}
+header nav .darkMode-toggle label .fa-moon {
+  color: #f1c40f;
+}
+header nav .darkMode-toggle label .fa-sun {
+  color: #f39c12;
+}
+header nav .darkMode-toggle label .ball {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50px;
+  transition: 0.3s linear;
+}
+header .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  transition: 1s ease;
+  text-align: center;
+  color: gray;
+}
+header .text h1 {
+  font-size: 5em;
+}
+header .text p {
+  font-size: 1.5em;
+}
+
+@media (max-width: 700px) {
+  header nav #navbar-toggle {
+    display: flex;
+    color: gray;
+  }
+  header nav .navbar-links {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+  }
+  header nav .navbar-links #nav-close {
+    display: flex;
+    font-size: 2em;
+    color: white;
+  }
+  header nav .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  header .text h1 {
+    font-size: 2.5em;
+  }
+  header .text p {
+    font-size: 1.2em;
+  }
+}
+.dark header {
+  background-image: url(/Images/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+}
+.dark header nav {
+  color: white;
+}
+.dark header nav .navbar-links ul li a {
+  color: white;
+}
+.dark header .text {
+  color: white;
+}
+.dark .btn {
+  border: 1px solid white;
+  color: white;
+  padding: 0.5em;
+}
+
+.btn {
+  border: 2px solid rgb(159, 157, 157);
+  color: gray;
+  padding: 0.5em;
+}/*# sourceMappingURL=styles.css.map */

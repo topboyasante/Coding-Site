@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+//Large Screens
+header{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(/Images/arnold-francisca-FBNxmwEVpAc-unsplash.jpg);
+    transition: 1s ease;
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5em 0;
+       
+        #navbar-toggle,#nav-close{
+            display: none;
+        }
+        .logo{
+            transition: 1s ease;
+            color: gray;
+        }
+        .navbar-links{
+            
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                li a{
+                    color: gray;
+                }
+            }            
+        }
+        .darkMode-toggle{
+            .checkbox{
+                opacity: 0;
+                position: absolute;
+        
+                &:checked + label .ball{
+                   transform: translateX(24px);
+                }
+            }
+            label{
+                width: 50px;
+                height: 26px;
+                background-color: rgb(62, 62, 62);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                border-radius: 50px;
+                position: relative;
+                .fa-moon{
+                    color: #f1c40f;
+                }
+                .fa-sun{
+                    color: #f39c12;
+                }
+                .ball{
+                    width: 22px;
+                    height: 22px;
+                    background-color: white;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    border-radius:50px ;
+                   transition: 0.3s linear;
+                }
+            }
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        width: 100vw;
+        transition: 1s ease;
+
+        text-align: center;
+        color: gray;
+
+        h1{
+            font-size: 5em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    }
+}
+
+//Media Queries
+@media (max-width:700px) {
+    header{
+        nav{
+            #navbar-toggle{
+                display: flex;
+                color: gray;
+            }
+            .navbar-links{
+                    display: none;
+                    background-color: rgba(black, 0.8);
+                    position: absolute;
+                    z-index: 1;
+                    top:0%;
+                    left:0%;
+                    width: 100vw;
+                    height: 100vh;
+                
+                    #nav-close{
+                        display: flex;
+                        font-size: 2em;
+                        color: white;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                    }
+            }
+        }
+        .text{
+            h1{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+//Dark Mode Features
+.dark{
+    header{
+        background-image: url(/Images/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+        nav{
+            color: white;
+            .navbar-links ul li a{
+                color: white;
+            }
+        }
+        .text{
+            color: white;
+        }
+    }
+    .btn{
+        border: 1px solid white;
+        color: white;
+        padding: 0.5em;
+    }
+   
+}
+
+//Utilities
+.btn{
+    border: 2px solid rgb(159, 157, 157);
+    color: gray;
+    padding: 0.5em;
+}
